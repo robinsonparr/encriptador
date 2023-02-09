@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto Robinson Parra</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+    
+    <main>
+            <div class="contenedor">
+
+                <section class="panelIzquierdo">
+
+                    <div class="logo">
+                    <p class="logo"><img src="image/letra.png" alt="Logo de la empresa" ></p>
+                </div>
+
+                <div class="Texto">
+                    <textarea name="textAreaIzq" class="textIzq" id="textIzq" cols="30" rows="13" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+
+                <div class="info">
+                    <p class="infor"><span style="color: rgb(226, 37, 4); font-size: 10px;">* </span>Solo letras minúsculas y sin acentos </p>
+                </div>
+                
+                <div class="BotonesIzquierda">
+                    <input type="button" value="Encriptar" class="boton encriptar" onclick="encriptar()">
+                    <input type="button" value="Desencriptar" class="boton desencriptar" onclick="desencriptar()">
+                </div>
+    
+            
+        </section>
+    
+        <section class="panelDerecho">
+                
+                <div id="salidaDetexto" class="salidaDetexto">
+                    <textarea name="" id="textAreaDerecha" class="textAreaDerecha" cols="30" rows="7"></textarea>
+                </div>
+
+                <div id="BotonesDerecha" class="BotonesDerecha">
+                    <input type="button" value="Copiar" class="boton copiar" onclick="copy()">
+                </div>
+
+                <div id="sinMensaje" class="sinMensaje">
+                    <img src="image/dibujo.png" alt="" class="dibujo">
+                    <p class="Mensaje1">Ningún mensaje<br>fue encontrado</p>
+                    <p class="Mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    
+                </div>
+
+            </section>
+    
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footerMain">
+
+            <div class="copyR">
+                <p>Creado por: <span class="nombrefooter">Robinson Parra Marin</span> </p>
+            </div>
+           
+        </div>
+
+    </footer>
+   
+    <script src="js/logica.js"></script>
+  
+</body>
+
+
+</html>
